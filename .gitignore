@@ -1,0 +1,9 @@
+build/
+CMakeCache.txt
+
+# Exclude IntelliJ IDEA configuration, except for the
+# run configuration and the CMake configuration.
+!.idea/
+.idea/*
+!.idea/runConfigurations/
+!.idea/cmake.xml
