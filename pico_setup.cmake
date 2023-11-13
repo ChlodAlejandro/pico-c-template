@@ -4,6 +4,10 @@ if (NOT DEFINED ENV{PICO_INSTALL_PATH})
     file(GLOB PICO_INSTALL_LIST LIST_DIRECTORIES true "C:/Program Files/Raspberry Pi/Pico SDK*")
     list(LENGTH PICO_INSTALL_LIST PICO_INSTALL_LIST_LENGTH)
 
+    if (EXISTS "C:/PicoSDK")
+        list(APPEND PICO_INSTALL_LIST "C:/PicoSDK")
+    endif ()
+
     if (PICO_INSTALL_LIST_LENGTH LESS_EQUAL 0)
         message(FATAL_ERROR "PICO_INSTALL_PATH not set and pico-setup-windows not found. Install the Pico SDK from github.com/raspberrypi/pico-setup-windows.")
     else()
