@@ -31,6 +31,11 @@ The default project is named pico_base_main, and refers to the project in the
 `includes/` directory. The CMakeLists.txt file in this directory is used to
 build the project. **Libraries need to be explicitly linked here.**
 
+When the template has been cloned/copied, open the folder with CLion. Load the
+top-level `CMakeLists.txt` file at the root of this template by right-clicking
+the file and selecting "Load CMake Project". You can also click on the "Load
+CMake Project" in the blue banner that appears.
+
 ### CMake
 CMake will automatically detect an installation of the Pico SDK on first load.
 If you have multiple versions of the SDK installed, the latest one will be

@@ -6,6 +6,10 @@ add_executable(pico_base_main
 target_link_libraries(pico_base_main
         # See https://www.raspberrypi.com/documentation/pico-sdk/ for a
         # list of libraries that can be linked.
+        #
+        # Adding something here? Be sure to reload your CMake project
+        # afterwards! This will make CLion index the newly-added libraries
+        # for code completion.
         pico_stdlib
 )
 
